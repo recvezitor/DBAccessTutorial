@@ -11,3 +11,8 @@ step1 - Spring-JDBC access using spring-framework
  - to launch example:
     - execute sql/schema.sql file
     - execute sql/test-data.sql file
+
+step2 - JPA with Hibernate implementation
+ - to launch example:
+    - execute sql/schema.sql file
+    - execute sql/test-data.sql file
