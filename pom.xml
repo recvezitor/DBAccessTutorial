@@ -76,6 +76,12 @@
                 <version>${spring.version}</version>
                 <scope>${spring-test.scope}</scope>
             </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-jdbc</artifactId>
+                <version>${spring.version}</version>
+                <scope>${spring.scope}</scope>
+            </dependency>
             <!--PostgreSQL-->
             <dependency>
                 <groupId>org.postgresql</groupId>
@@ -211,6 +217,7 @@
 
     <modules>
         <module>Direct</module>
+        <module>SpringJDBC</module>
     </modules>
 
     <profiles>

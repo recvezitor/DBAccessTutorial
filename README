@@ -6,3 +6,8 @@ step0 - Direct access using java.sql.* namespace
     - execute sql/schema.sql file
     - execute sql/test-data.sql file
 
+step1 - Spring-JDBC access using spring-framework
+ - added spring-jdbc dependency
+ - to launch example:
+    - execute sql/schema.sql file
+    - execute sql/test-data.sql file
