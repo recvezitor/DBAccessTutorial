@@ -27,6 +27,11 @@
         <spring.version>3.1.2.RELEASE</spring.version>
         <spring.scope>compile</spring.scope>
         <spring-test.scope>test</spring-test.scope>
+        <!--<postgresql.version>9.0-801.jdbc4</postgresql.version>-->
+        <!--<postgresql.version>9.2-1002-jdbc4</postgresql.version>-->
+        <!--<postgresql.version>9.1-901-1.jdbc4</postgresql.version>-->
+        <postgresql.version>9.2-1004-jdbc4</postgresql.version>
+        <postgresql.scope>compile</postgresql.scope>
 
         <!--Plugin section-->
         <maven-clean-plugin.version>2.5</maven-clean-plugin.version>
@@ -71,23 +76,40 @@
                 <version>${spring.version}</version>
                 <scope>${spring-test.scope}</scope>
             </dependency>
+            <!--PostgreSQL-->
+            <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>${postgresql.version}</version>
+                <scope>${postgresql.scope}</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <dependencies>
-        <!--JUnit-->
+        <!--JUnit - http://junit.org/-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
             <scope>${junit.scope}</scope>
         </dependency>
-        <!--Slf4j-->
+        <!--Log4j - http://logging.apache.org/log4j/-->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <!--Slf4j - http://www.slf4j.org/-->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>${slf4j.version}</version>
-            <scope>${slf4j.scope}</scope>
         </dependency>
     </dependencies>
 

@@ -1,2 +1,8 @@
-Camel Tutorial
+DB Access Tutorial
+
+step0 - Direct access using java.sql.* namespace
+ - used only org.postgresql dependency to define driver
+ - to launch example:
+    - execute sql/schema.sql file
+    - execute sql/test-data.sql file
 
